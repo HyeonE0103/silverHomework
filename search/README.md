@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+## 목차
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [리액트 검색창 기능 구현](#리액트-검색창-기능-구현)
+  - [개요](#개요)
+  - [스터디원🤔](#스터디원)
+  - [디자인 택 1](#디자인-택-1)
+  - [검색 API](#검색-api)
+  - [vite로 react 생성](#vite로-react-생성)
+  - [Eslint prettier](#eslint-prettier)
+  - [CSS 프레임워크 (스타일) 자유](#css-프레임워크-스타일-자유)
+  - [완성조건](#완성조건)
+  - [시간](#시간)
+  - [부탁](#부탁)
 
-## Available Scripts
+# 리액트 검색창 기능 구현
 
-In the project directory, you can run:
+## 개요
 
-### `yarn start`
+각각의 리액트를 다루는 폼이나 자주쓰는 기능을 단시간내에 구현하는것을 연습하여 로직이나 훅을 통한 기능 구현 을 친숙화하는것을 목표로 시작
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 스터디원🤔
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `yarn test`
+  <a href="https://github.com/nonjk2">
+      <img src="https://github.com/nonjk2.png" width="100" height="100"/>
+  </a>
+  <a href="https://github.com/helloworld442">
+      <img src="https://github.com/helloworld442.png" width="100" height="100"/>
+  </a>
+  <a href="https://github.com/makepin2r">
+      <img src="https://github.com/makepin2r.png" width="100" height="100"/>
+  </a>
+  <a href="https://github.com/TheON2">
+      <img src="https://github.com/TheON2.png" width="100" height="100"/>
+  </a>
+  <a href="https://github.com/junho01052">
+      <img src="https://github.com/junho01052.png" width="100" height="100"/>
+  </a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <a href="https://github.com/Hyeon12">
+      <img src="https://github.com/Hyeon12.png" width="100" height="100"/>
+  </a>
 
-### `yarn build`
+  <a href="https://github.com/nayoung3669">
+      <img src="https://github.com/nayoung3669.png" width="100" height="100"/>
+  </a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <a href="https://github.com/doyoung1002">
+      <img src="https://github.com/doyoung1002.png" width="100" height="100"/>
+  </a>
+  <a href="https://github.com/Haru-Im">
+      <img src="https://github.com/Haru-Im.png" width="100" height="100"/>
+  </a>
+  <a href="https://github.com/taehyunkim3">
+      <img src="https://github.com/taehyunkim3.png" width="100" height="100"/>
+  </a>
+  <a href="https://github.com/kangsinbeom">
+      <img src="https://github.com/kangsinbeom.png" width="100" height="100"/>
+  </a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <a href="https://github.com/khu107">
+      <img src="https://github.com/khu107.png" width="100" height="100"/>
+  </a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 디자인 택 1
 
-### `yarn eject`
+[디자인 1](https://autocompletejs.webflow.io/)
+[디자인 2](https://quick-search-widget.webflow.io/)
+[디자인 3](https://wf-live-search.webflow.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 검색 API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[카카오 검색 API](https://developers.kakao.com/docs/latest/ko/daum-search/dev-guide)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+웹문서
+동영상
+이미지
+블로그
+책
+카페
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## vite로 react 생성
 
-## Learn More
+```shell
+npm init vite
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Eslint prettier
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+자유
 
-### Code Splitting
+## CSS 프레임워크 (스타일) 자유
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [x] styled-components
+- [x] Emotion
+- [x] Styled-jsx
+- [x] Material-UI
+- [x] tailwind CSS
+- [x] SCSS
 
-### Analyzing the Bundle Size
+## 완성조건
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- STEP 1 : **검색어를 입력하여 데이터를 가져와서 뿌려주기**
+- STEP 2 : **검색어를 입력하면 자동완성창 혹은 연관검색어 검색창완성**
+- STEP 3 : **option 드롭다운으로 옵션선택할수있게하기**
 
-### Making a Progressive Web App
+## 시간
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- 토요일 집중코딩시간
 
-### Advanced Configuration
+## 부탁
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 만약에 뭔가를 해결했을때 주석으로 부탁드립니당
+- (~해서 ~로 해결했다).
+- step 2 혹은 step 3 무난히 하시면 CSS 남은시간동안 조금만 신경써주세요(현직자피셜 스타일링 생각보다 중요 ~~토스때매~~)
